@@ -1,4 +1,4 @@
-package br.com.mali.mapper;
+package br.com.mali.config;
 
 import org.mapstruct.Mapper;
 import br.com.mali.domains.dto.CharacterRequestDTO;

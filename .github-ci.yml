@@ -1,0 +1,6 @@
+include:
+ - project: 'OA4/template'
+   file: 'java_maven_ecs.yaml'
+
+variables:
+ DISABLE_CD: "true"

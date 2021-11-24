@@ -1,0 +1,24 @@
+projects:
+   boh:
+   initials: OA4
+   initials_app: OA4-ES
+   product: orangepipes
+   app_name: examplejavaonzemaven
+  type: application
+  language: java
+  build_toll: maven
+
+  artifact:
+   file: ${CI_PROJECT_NAME}.tar
+   type: docker
+   store: docker
+
+  deploy:
+   aws:
+    types: ecs
+     target:
+      all:
+       cluster: "" # cluste ecs ou fargate
+       service: "" # service
+       container_name: "" # nome do container
+       region: us-east-1
